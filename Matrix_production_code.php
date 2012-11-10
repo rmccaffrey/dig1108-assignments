@@ -6,3 +6,7 @@
 */
 
 echo "Enter the Matrix";
+
+$doors = array();
+$doors = array_fill(1,100,"Closed");
+
