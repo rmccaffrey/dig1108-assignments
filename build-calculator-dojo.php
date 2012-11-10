@@ -1,17 +1,32 @@
 <?php
 
 /**
-    *build a calculator with fuctions, taking into account positive, negative
+    *test code for calclator, basic calculations via functions, specs are:
     
-    *and zero integers, this is the test calculator file.
+    * 0 0, 0 1, 0 -1, 1 0, 1 1, 1 -1, -1 0, -1 1, -1 -1
     
 */
 
 require_once "production-calculator.php";
 
-
-/** specs
-
+/**
+    *trying to kill the copy paste
 */
-if (assert (add(1,1) == 2)) echo "pass";
+
+function test ($assertion)
+{
+    if ($assertion == true) echo $assertion;
+}
+
+/**
+    *test code for add
+*/
+
+if (assert("add(0,0) == 0")) echo "pass add 0 0";
+if (assert("add(0,1) == 1")) echo "pass add 0 1";
+test $assertion "(2,2) == 4";
+
+/** lost the thread of the thought
+*/
+
 
