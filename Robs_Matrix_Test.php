@@ -17,15 +17,28 @@
  * Tell me the state of all doors   
  */
 
+/**
+    * thoughts on what I need
+    *
+    * hallway array containing the doors
+    *
+    * variable door to set to open or closed?
+    *
+    * variable pass to determine how many passes we do?
+      
+*/
 require_once "Robs_Matrix.php";
 
 /**
-    *failing test for existance of an array
+    * tests for the hallway array
 */
 
-if (assert(count($doors) == 100))
-    echo 'Passed: doors = 100';
+if (assert(count($hallway) == 100)) echo "pass doors == 100";
 
-if (assert($doors([100]))) == "Open") echo "pass 2";
+/**
+    * test for a door being closed
+*/
 
-//var_dump ($doors);
+if (assert($hallway[100] == "Open")) echo "door 100 open";
+
+//print_r(array_values($hallway));
