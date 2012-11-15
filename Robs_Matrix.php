@@ -11,9 +11,14 @@ echo "Enter the Matrix";
     *create an array called 'doors' and fill it with 100 'closed' doors
 */
 
-$hallway = array_fill(1,100,"Closed");
+$doorClosed = "Closed";
+$hallway = array_fill(1,100, $doorClosed);
+
+
+$doorOpen = "Open";
+
 
 function $opendoor
 {
-    if ($hallway[] == "Closed") "Closed" = "Open";
+    if (array_key_exists($doorClosed, $hallway)) $doorClosed = $doorOpen;
 }
