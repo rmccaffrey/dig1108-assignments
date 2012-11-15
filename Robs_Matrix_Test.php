@@ -1,6 +1,6 @@
 <?php
 /**
- * testing module for the Matrix dojo
+ * testing module for the Matrix dojo blah
  *
  * Specs are:
  *
