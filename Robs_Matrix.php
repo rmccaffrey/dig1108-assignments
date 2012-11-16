@@ -15,6 +15,9 @@ $doorClosed = "Closed";
 $hallway = array_fill(1,100, $doorClosed);
 
 
+$hallway [57] = "Open";
+
+/**
 $doorOpen = "Open";
 
 

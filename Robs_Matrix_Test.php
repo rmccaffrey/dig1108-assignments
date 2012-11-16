@@ -41,4 +41,5 @@ if (assert(count($hallway) == 100)) echo "pass doors == 100";
 
 if (assert($hallway[100] == "Open")) echo "door 100 open";
 
-//print_r(array_values($hallway));
+print_r(array_values($hallway));
+print_r(array_keys($hallway));
