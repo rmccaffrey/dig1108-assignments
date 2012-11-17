@@ -11,19 +11,14 @@ echo "Enter the Matrix";
     *create an array called 'doors' and fill it with 100 'closed' doors
 */
 
-$doorClosed = "Closed";
-$hallway = array_fill(1,100, $doorClosed);
 
-foreach($hallway as $key=>$value) 
-{ 
-    if ($key % 2 == 0)
-    {
-        unset($value = "open"); 
-        echo $value . PHP_EOL;
-    }    
-}
-?> 
-//print_r(array_values($hallway));
+$small = array("Closed","Closed","Closed");
+
+if ($small [$key == 1]) $value = "Open";
+
+print_r(array_values($small));
+
+
 //echo "initial state";
 
 //$keyNumber = integer;
