@@ -1,45 +1,36 @@
 <?php
-/**
- * testing module for the Matrix dojo blah
- *
- * Specs are:
- *
- * Imagine a hallway with 50 closed doors on each side
- *
- * Go to the end of the hall, back up and open every door
- *
- * Go back and close even numbered doors
- *
- * Go back and every third door, open if closed, close if open
- *
- * Repeat 100 times.
- *
- * Tell me the state of all doors   
- */
 
 /**
-    * thoughts on what I need
-    *
-    * hallway array containing the doors
-    *
-    * variable door to set to open or closed?
-    *
-    * variable pass to determine how many passes we do?
-      
+ * Imagine a hallway with 100 doors, 50 per side
+ * 
+ * Verify all of the doors are closed.
+ * 
+ * pass through the hall and open every door
+ * 
+ * pass through again and close every other door
+ * 
+ * pass through a third time and switch the state of every third door
+ * 
+ * continue this for 100 times
+ * 
+ * tell me the state of every door at the end of this process
 */
+
 require_once "Robs_Matrix.php";
 
-/**
-    * tests for the hallway array
-*/
+//verify there is an array that is 100 values long and filled with 'closed'
+if (assert (is_array($hallway))) echo "there is an hallway";
+if (assert(count($hallway) == 100)) echo "the hallway has 100 doors";
 
-if (assert(count($hallway) == 100)) echo "pass doors == 100";
+foreach ($hallway() as $value)
+{
+    echo "the door is closed";
+}
 
-/**
-    * test for a door being closed
-*/
+//verify that all doors are open
 
-if (assert($hallway[100] == "Open")) echo "door 100 open";
+//verify that every other door is open
 
-//print_r(array_values($hallway));
-//print_r(array_keys($hallway));
+//verify that every third door changed states
+
+//continue for 100 times
