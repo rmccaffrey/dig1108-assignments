@@ -22,11 +22,20 @@ require_once "Robs_Matrix.php";
 if (assert (is_array($hallway))) echo "there is an hallway";
 if (assert(count($hallway) == 100)) echo "the hallway has 100 doors";
 
-foreach ($hallway() as $value)
+/*foreach ($hallway as $value)
 {
-    echo "the door is closed";
+    echo $value;
 }
+*/
+//key ($hallway);
 
+while ($door_state = current($hallway))
+{
+    if ($door_state == 'Closed')
+    {
+        echo key($hallway).'<br />';
+    }
+}
 //verify that all doors are open
 
 //verify that every other door is open
