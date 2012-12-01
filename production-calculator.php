@@ -6,9 +6,4 @@
     *the first 'echo' line is to verify I'm calling the correct file
 */
 
-echo "production calculator";
-
-function add ($a, $b)
-{
-    return $a + $b;
-}
+echo "this is the production calculator";
