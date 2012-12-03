@@ -7,3 +7,9 @@
 */
 
 echo "this is the production calculator";
+
+function add ($a, $b)
+{
+    return $a + $b;    
+}
+
