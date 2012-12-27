@@ -8,4 +8,4 @@ function test ($assertion, $message = null)
     echo (@assert($assertion) ? 'pass ' : 'fail ') . $message . "\n";
 }
 
-test (1 + 1 == 2, "1 + 1 = 2");
+test (class_exists($calculator), "A calculator class exists");
