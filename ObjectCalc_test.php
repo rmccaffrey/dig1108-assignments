@@ -12,12 +12,17 @@ function test ($assertion, $message = null)
 //test for the existance of a Calculator class
 test (class_exists('Calculator'), "A calculator class exists");
 
+
 //create a new instance of the calculator
 $calculator = new Calculator;
 
-//test for the existance of a new calcualtor
-test ($calculator != 0, "There is a new calculator");
+//test for an instance of a calculator
+test (($calculator != null), "There is an instance of the calculator");
 
 //test if the new calcualtor is set to zero
-test ($calculator->register != 0, "The calculator is set to 0");
 test ($calculator->register == 0, "The calculator is set to 0");
+
+//test for an add function
+test ($calculator->add(1,1) == 2, "1 + 1 = 2");
+
+//test for adding a single number
