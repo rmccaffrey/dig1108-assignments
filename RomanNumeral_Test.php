@@ -36,7 +36,8 @@ test (($calculator != null), "There is a new calculator");
  //test that the new calculator is set to 0
 test ($calculator->register == 0, "The calculator is set to 0");
 
- //test that the number 1 is returned as I
+/*
+//test that the number 1 is returned as I
 if (function_exists('$calculator->add'))
 {
     echo "There is a way to convert to I";
@@ -45,12 +46,13 @@ if (function_exists('$calculator->add'))
     {
         echo "There is not a way to convert to I";
     }
-    
- if (function_exists('$calculator->add'))
-{
-    echo "There is an add function"; 
-}
+*/
+
+test ($calculator->convert_i(1) == "I", "1 is equal to I");
+
  //test that the number 2 is returned as II
+ 
+ test ($calculator->convert_i(2) == "II", "2 is equal to II");
  
  //test that the number 3 is returned as III
  
