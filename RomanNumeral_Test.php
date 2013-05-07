@@ -36,8 +36,15 @@ test (($calculator != null), "There is a new calculator");
  //test that the new calculator is set to 0
 test ($calculator->register == 0, "The calculator is set to 0");
 
- 
  //test that the number 1 is returned as I
+if (function_exists('$calculator->convert_i'))
+{
+    echo "There is a way to convert to I";
+}
+    else
+    {
+        echo "There is not a way to convert to I";
+    }
  
  //test that the number 2 is returned as II
  

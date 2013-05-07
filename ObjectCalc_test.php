@@ -22,6 +22,12 @@ test (($calculator != null), "There is an instance of the calculator");
 //test if the new calcualtor is set to zero
 test ($calculator->register == 0, "The calculator is set to 0");
 
+//test that there is a new function
+if (function_exists('$calculator->add'))
+{
+    echo "There is an add function"; 
+}
+
 //test for an add function
 test ($calculator->add(1,1) == 2, "1 + 1 = 2");
 
