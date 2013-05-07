@@ -52,10 +52,12 @@ test ($calculator->convert_i(1) == "I", "1 is equal to I");
 
  //test that the number 2 is returned as II
  
- test ($calculator->convert_i(2) == "II", "2 is equal to II");
+test ($calculator->convert_i (2) == "II", "2 is equal to II");
  
  //test that the number 3 is returned as III
  
+test ($calculator->convert_i (3) == "III", "3 is equal to III");
+
  //test that the number 4 is returned as IV
  
  //test that the number 5 is returned as V
