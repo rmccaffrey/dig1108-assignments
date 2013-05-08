@@ -64,6 +64,13 @@ if (function_exists('$calculator->add'))
 test ($calculator->number_limit (21) == "Error: Number too large to calculate", "The error test works");
  
  
+ // test that a number is divisible by 10
+test (11 % 10 == 1, "The remainder is 1"); 
+echo 12 / 10;
+
+ 
+ 
+  //test that the number 1 is returned as I
 test ($calculator->convert_i(1) == "I", "1 is equal to I");
 
  //test that the number 2 is returned as II
