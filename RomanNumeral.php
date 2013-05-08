@@ -15,6 +15,15 @@ class Calculator
             return $this->register;
         }
     }
+    public function divide_x ($a)
+    {
+        if (($a % 10) == 0)
+        {
+            $this->register = 0;
+            
+            return $this->register;
+        }
+    }
     public function convert_i ($a)
     {
         if ($a == 1)
