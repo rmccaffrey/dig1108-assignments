@@ -19,7 +19,7 @@ class Calculator
     {
         if (($a % 10) == 0)
         {
-            $this->register = 0;
+            $this->register = ($a / 10);
             
             return $this->register;
         }
