@@ -65,8 +65,7 @@ test ($calculator->number_limit (21) == "Error: Number too large to calculate", 
  
  
  // test that a number is divisible by 10
-test (11 % 10 == 1, "The remainder is 1"); 
-echo 12 / 10;
+test ($calculator->divide_x (10) == 0, "The number is equally divisible by 10");
 
  
  
