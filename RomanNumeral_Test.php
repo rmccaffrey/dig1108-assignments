@@ -61,7 +61,7 @@ if (function_exists('$calculator->add'))
 */
 
  // test that the number is less than or equal to 20
-test ($calculator->convert_i(21) == "Error: Number too large to calculate", "The error test works");
+test ($calculator->number_limit (21) == "Error: Number too large to calculate", "The error test works");
  
  
 test ($calculator->convert_i(1) == "I", "1 is equal to I");

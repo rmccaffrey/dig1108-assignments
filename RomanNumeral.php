@@ -6,6 +6,15 @@ echo "It's the Roman Numeral Converter, ya'll!" . "\n";
 class Calculator
 {
     public $register = 0;
+    public function number_limit ($a)
+    {
+        if ($a >= 20.01)
+        {
+            $this->register = "Error: Number too large to calculate";
+            
+            return $this->register;
+        }
+    }
     public function convert_i ($a)
     {
         if ($a == 1)
