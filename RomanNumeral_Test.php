@@ -60,6 +60,10 @@ if (function_exists('$calculator->add'))
     }
 */
 
+ // test that the number is less than or equal to 20
+test ($calculator->convert_i(21) == "Error: Number too large to calculate", "The error test works");
+ 
+ 
 test ($calculator->convert_i(1) == "I", "1 is equal to I");
 
  //test that the number 2 is returned as II
@@ -70,6 +74,8 @@ test ($calculator->convert_i (2) == "II", "2 is equal to II");
  
 test ($calculator->convert_i (3) == "III", "3 is equal to III");
 
+
+ 
  //test that the number 4 is returned as IV
  
  
