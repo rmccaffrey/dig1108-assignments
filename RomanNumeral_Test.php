@@ -3,20 +3,32 @@
 //call the production code
 require_once 'RomanNumeral.php';
 
-/*
- *When asserting an Arabic number, the calculator should convert it to a
+/**
+ * When asserting an Arabic number, the calculator should convert it to a
  *
- *Roman numeral. Given a Roman numeral, it should return an Arabic number.
+ * Roman numeral. Given a Roman numeral, it should return an Arabic number.
  *
- *1 = I, 2 = II, 3 = III, 4 = IV, 5 = V, 6 = VI, 7 = VII, 8 = VIII, 9 = IX,
+ * 1 = I, 2 = II, 3 = III, 4 = IV, 5 = V, 6 = VI, 7 = VII, 8 = VIII, 9 = IX,
  *
- *X = 10
+ * X = 10
  *
- *Logic is based on 5s. If x <= 5, do (I conversions), if x = 5 do (V 
+ * Logic is based on 5s. If x <= 5, do (I conversions), if x = 5 do (V 
  *
- *conversions). Try to deal up to 20 for now
+ * conversions). Try to deal up to 20 for now
  */
  
+ /**
+  * logic map through 20
+  * 
+  * is the number = to or less than 20? (if no, error)
+  * 
+  * is the number divisible by 10? (if yes, quoitient and remainder)
+  * 
+  * is the remainder divisible by 5? (if yes, quoitient and remainder)
+  * 
+  * then do convert_i loop
+  */
+  
  //write generic test message
  
  function test ($assertion, $message = null)
@@ -59,5 +71,6 @@ test ($calculator->convert_i (2) == "II", "2 is equal to II");
 test ($calculator->convert_i (3) == "III", "3 is equal to III");
 
  //test that the number 4 is returned as IV
+ 
  
  //test that the number 5 is returned as V
