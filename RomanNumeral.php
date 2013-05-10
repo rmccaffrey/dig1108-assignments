@@ -21,7 +21,10 @@ class Calculator
         {
             $this->register = ($a / 10);
             
-            return $this->register;
+            for ($i = 1; $i <= $this->register; $i++)
+            {
+                echo "X";
+            }
         }
     }
     public function divide_v ($a)
