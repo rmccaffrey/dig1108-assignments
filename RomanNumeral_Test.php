@@ -69,7 +69,7 @@ test ($calculator->divide_x (10) == 1, "The number is equally divisible by 10");
 
  // test that a remainder is divisible by 5
  
- test ($calcualtor->divide_v (5) == 1, "The number is equally divisible by 5");
+ test ($calculator->divide_v (5) == 1, "The number is equally divisible by 5");
  
   //test that the number 1 is returned as I
 test ($calculator->convert_i(1) == "I", "1 is equal to I");
@@ -82,9 +82,8 @@ test ($calculator->convert_i (2) == "II", "2 is equal to II");
  
 test ($calculator->convert_i (3) == "III", "3 is equal to III");
 
-
  
  //test that the number 4 is returned as IV
- 
+ test ($calculator->less_one (4) == "IV", "4 is equal to IV");
  
  //test that the number 5 is returned as V

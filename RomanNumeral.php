@@ -24,6 +24,16 @@ class Calculator
             return $this->register;
         }
     }
+    public function divide_v ($a)
+    {
+        if (($a % 5) == 0)
+        {
+            $this->register = ($a / 5);
+            
+            return $this->register;
+            
+        }
+    }
     public function convert_i ($a)
     {
         if ($a == 1)
