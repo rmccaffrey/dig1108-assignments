@@ -65,7 +65,7 @@ test ($calculator->number_limit (21) == "Error: Number too large to calculate", 
  
  
  // test that a number is divisible by 10
-test ($calculator->divide_x (10) == 1, "The number is equally divisible by 10");
+test ($calculator->divide_x (10) == "X", "10 is equal to X");
 
  // test that a remainder is divisible by 5
  
@@ -85,5 +85,6 @@ test ($calculator->convert_i (3) == "III", "3 is equal to III");
  
  //test that the number 4 is returned as IV
  test ($calculator->less_one (4) == "IV", "4 is equal to IV");
+ test ($calculator->less_one (9) == "IX", "9 is equal to IX");
  
  //test that the number 5 is returned as V

@@ -34,6 +34,22 @@ class Calculator
             
         }
     }
+    public function less_one ($a)
+    {
+        if ($a == (5 - 1))
+        {
+            $this->register = "IV";
+            
+            return $this->register;
+        }
+        
+        if ($a == (10 - 1))
+        {
+            $this->register = "IX";
+            
+            return $this->register;
+        }
+    }
     public function convert_i ($a)
     {
         if ($a == 1)
