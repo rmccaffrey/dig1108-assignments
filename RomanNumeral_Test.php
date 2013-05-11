@@ -28,7 +28,21 @@ require_once 'RomanNumeral.php';
   * 
   * then do convert_i loop
   */
-  
+
+/**
+ * new logic map through 20
+ * 
+ * is the number greater than 20? (if yes, error)
+ * 
+ * is the number 20? (if yes, XX)
+ * 
+ * is the number greater than 10? (if yes, X)
+ * 
+ * is remainder greater than 5? (if yes, V)
+ * 
+ * then do convert_i loop
+ */
+ 
  //write generic test message
  
  function test ($assertion, $message = null)
@@ -67,6 +81,7 @@ test ($calculator->number_limit (21) == "Error: Number too large to calculate", 
  // test that a number is divisible by 10
 test ($calculator->divide_x (10) == "X", "10 is equal to X");
 test ($calculator->divide_x (20) == "XX", "20 is equal to XX");
+test ($calculator->divide_x (15) == "XV", "15 is equal to XV");
 
  // test that a remainder is divisible by 5
  

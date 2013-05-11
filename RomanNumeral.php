@@ -6,6 +6,10 @@ echo "It's the Roman Numeral Converter, ya'll!" . "\n";
 class Calculator
 {
     public $register = 0;
+    public $quotient = 0;
+    public $remainder = 0;
+    public function roman_calculator ($a)
+{
     public function number_limit ($a)
     {
         if ($a >= 20.01)
@@ -24,6 +28,11 @@ class Calculator
             for ($i = 1; $i <= $this->register; $i++)
             {
                 echo "X";
+                
+            }
+            else $this->quotient = ()
+            {
+                
             }
         }
     }
@@ -75,4 +84,5 @@ class Calculator
        }
     }
   
+}
 }
