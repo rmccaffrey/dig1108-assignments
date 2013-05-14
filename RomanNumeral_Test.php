@@ -33,4 +33,13 @@ require_once 'RomanNumeral.php';
  //test for calculator class
  
  test (class_exists('Calculator'), "A calculator class exists");
+ 
+ //add a new instance of the calculator
+ $calculator = new Calculator;
+ 
+ //test if the instance exists
+ test ($calculator != null, "The calculator exists");
+ 
+ //test if the calculator is set to zero
+ test ($calculator->register == 0, "Somehow, this Roman Numeral calculator has a zero");
 
