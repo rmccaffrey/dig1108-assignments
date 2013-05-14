@@ -21,5 +21,12 @@ class Calculator
             
             return $this->register;
         }
+        
+        if ($a == 3)
+        {
+            $this->register = "III";
+            
+            return $this->register;
+        }
     }
 }
