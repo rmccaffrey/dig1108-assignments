@@ -44,7 +44,7 @@ require_once 'RomanNumeral.php';
  test ($calculator->register == 0, "somehow this Roman Numeral calculator has a zero");
 
 // test that number is less than 39
-test ($calcualtor->find_tens (40) == "Error: too large to calculate");
+test ($calculator->find_tens (40) == "Error: too large to calculate" , "The calculator can reject large numbers");
 
 //test that 1 is equal to I
 test ($calculator->convert_i (1) == "I", "1 equals I");

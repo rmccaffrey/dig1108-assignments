@@ -6,6 +6,15 @@ echo "It's the Roman Numeral Converter, ya'll!" . "\n";
 class Calculator
 {
     public $register = 0;
+    public function find_tens ($a)
+    {
+        if ($a >= 40)
+        {
+            $this->register = "Error: too large to calculate";
+            
+            return $this->register;
+        }
+    }
     public function convert_i ($a)
     {
         if ($a == 1)
