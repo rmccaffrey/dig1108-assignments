@@ -52,3 +52,6 @@ test ($calculator->convert_i (2) == "II", "2 equals II");
 // test that 3 is equal to III
 test ($calculator->convert_i (3) == "III", "3 equals III");
 
+// test that 4 is equal to IV
+test ($calculator->i_before (4) == "IV", "4 equals IV");
+
