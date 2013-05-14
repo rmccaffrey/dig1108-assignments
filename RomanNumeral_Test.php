@@ -43,3 +43,5 @@ require_once 'RomanNumeral.php';
  //test if the calculator is set to zero
  test ($calculator->register == 0, "somehow this Roman Numeral calculator has a zero");
 
+//test that 1 is equal to I
+test ($calculator->convert_i (1) == "I", "1 equals I");
