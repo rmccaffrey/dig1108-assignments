@@ -9,19 +9,19 @@ require_once 'RomanNumeral.php';
  * 
  * Roman numerals. Consider whether this means an array with 
  * 
- * places for Is, Vs, Xs, etc. Try to do up to 20 to simply
+ * places for Is, Vs, Xs, etc. Try to do up to 39 to simply
  * 
  * problem for now. Consider how every 5 numbers there is a 
  * 
- * 'less one' function (for 4, 9, 14, & 19). Consider that 
+ * 'less one' function (for 4, 9, 14, 19, etc). Consider that 
  * 
  * you only need three Roman numerals (I, V, & X) to count to
  * 
- * 20. However, you need up to 5 'places' to write numbers
+ * 39. However, you need up to 7 'places' to write numbers
  * 
- * through 20 (XVIII being the specific example). The repeating 
+ * through 39 (XXXVIII being the specific example). The repeating 
  * 
- * pattern through 20 is (I through III, before 5, 5, before 10, 10)
+ * pattern through 39 is (I through III, before 5, 5, before 10, 10)
  */
  
  //write a general test
