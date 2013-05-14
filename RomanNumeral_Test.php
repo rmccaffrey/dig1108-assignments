@@ -19,7 +19,18 @@ require_once 'RomanNumeral.php';
  * 
  * 20. However, you need up to 5 'places' to write numbers
  * 
- * through 20 (XVIII being the specific example).
+ * through 20 (XVIII being the specific example). The repeating 
+ * 
+ * pattern through 20 is (I through III, before 5, 5, before 10, 10)
  */
  
+ //write a general test
+ function test ($assertion, $message = null)
+ {
+     echo (@assert($assertion) ? 'pass ' : 'fail ') . $message . "\n";
+ }
  
+ //test for calculator class
+ 
+ test (class_exists('Calculator'), "A calculator class exists");
+
