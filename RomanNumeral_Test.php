@@ -48,9 +48,23 @@ test ($calculator->find_tens (40) == "Error: too large to calculate" , "The calc
 
 //test that the calculator can convert 10s to Xs
 test ($calculator->find_tens (30) == "XXX", "30 equals XXX");
-test ($calculator->find_tens (39) == "XXX", "39 equals XXXIX");
-test ($calculator->find_tens (20) == "XXX", "20 equals XX");
-test ($calculator->find_tens (11) == "XXX", "11 equals XI");
+test ($calculator->find_tens (39) == "XXXIX", "39 equals XXXIX");
+test ($calculator->find_tens (20) == "XX", "20 equals XX");
+test ($calculator->find_tens (11) == "XI", "11 equals XI");
+
+//test that the calcuator can convert 9s to IXs
+test ($calculator->find_nines (9) == "IX", "9 equals IX");
+
+//test that the calcuator can convert 5s to Vs
+test ($calculator->find_fives (5) == "V", "5 equals V");
+
+//test that the calcuator can convert 5s to Vs
+test ($calculator->find_fours (4) == "IV", "4 equals IV");
+
+//test that the calculator can convert 5s to Vs
+//test ($calculator->find_tens (35) == "XXXV", "35 equals XXXV");
+//test ($calculator->find_tens (25) == "XXV", "25 equals XXV");
+//test ($calculator->find_tens (19) == "XIX", "19 equals XIX");
 
 //test that 1 is equal to I
 test ($calculator->convert_i (1) == "I", "1 equals I");
@@ -60,7 +74,4 @@ test ($calculator->convert_i (2) == "II", "2 equals II");
 
 // test that 3 is equal to III
 test ($calculator->convert_i (3) == "III", "3 equals III");
-
-// test that 4 is equal to IV
-test ($calculator->i_before (4) == "IV", "4 equals IV");
 

@@ -22,6 +22,34 @@ class Calculator
                 
                 echo "X";
             }
+            
+        }
+    }
+    public function find_nines ($a)
+    {
+        if ($a == 9)
+        {
+            $this->register = "IX";
+            
+            return $this->register;
+        }
+    }
+       public function find_fives ($a)
+    {
+        if ($a == 5)
+        {
+            $this->register = "V";
+            
+            return $this->register;
+        }
+    }
+        public function find_fours ($a)
+    {
+        if ($a == 4)
+        {
+            $this->register = "IV";
+            
+            return $this->register;
         }
     }
     public function convert_i ($a)
