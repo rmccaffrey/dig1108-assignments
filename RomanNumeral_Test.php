@@ -45,3 +45,6 @@ require_once 'RomanNumeral.php';
 
 //test that 1 is equal to I
 test ($calculator->convert_i (1) == "I", "1 equals I");
+
+//test that 2 is equal to II
+test ($calculator->convert_i (2) == "II", "2 equals II");
