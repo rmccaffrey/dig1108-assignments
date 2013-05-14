@@ -41,5 +41,5 @@ require_once 'RomanNumeral.php';
  test ($calculator != null, "The calculator exists");
  
  //test if the calculator is set to zero
- test ($calculator->register == 0, "Somehow, this Roman Numeral calculator has a zero");
+ test ($calculator->register == 0, "somehow this Roman Numeral calculator has a zero");
 
