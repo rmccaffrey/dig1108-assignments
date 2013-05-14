@@ -14,5 +14,12 @@ class Calculator
             
             return $this->register;
         }
+        
+        if ($a == 2)
+        {
+            $this->register = "II";
+            
+            return $this->register;
+        }
     }
 }
