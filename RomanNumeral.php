@@ -14,6 +14,15 @@ class Calculator
             
             return $this->register;
         }
+        else
+        {
+            while ($a > 9)
+            {
+                $a = ($a - 10);
+                
+                echo "X";
+            }
+        }
     }
     public function convert_i ($a)
     {

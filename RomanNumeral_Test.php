@@ -46,6 +46,12 @@ require_once 'RomanNumeral.php';
 // test that number is less than 39
 test ($calculator->find_tens (40) == "Error: too large to calculate" , "The calculator can reject large numbers");
 
+//test that the calculator can convert 10s to Xs
+test ($calculator->find_tens (30) == "XXX", "30 equals XXX");
+test ($calculator->find_tens (39) == "XXX", "39 equals XXXIX");
+test ($calculator->find_tens (20) == "XXX", "20 equals XX");
+test ($calculator->find_tens (11) == "XXX", "11 equals XI");
+
 //test that 1 is equal to I
 test ($calculator->convert_i (1) == "I", "1 equals I");
 
