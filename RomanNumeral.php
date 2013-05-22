@@ -7,6 +7,8 @@ class Calculator
 {
     public $register = 0;
     
+    public $remainder = 0;
+    
     public function too_high ($a)
     {
         if ($a > 40)
@@ -41,6 +43,8 @@ class Calculator
         $this->register = str_repeat("X" , $number_tens);
         
         return $this->register;
+        
+        $remainder = $a;
     }
     
     public function equals_nine ($a)
@@ -67,6 +71,8 @@ class Calculator
         $this->register = str_repeat("V" , $number_fives);
         
         return $this->register;
+        
+        $remainder = $a;
     }
     
     public function equals_four ($a)
@@ -101,6 +107,28 @@ class Calculator
         {
             $this->register = "The Romans never learned of zero";
             
+            return $this->register;
+        }
+    }
+    
+    public function roman_numerals ($a)
+    {
+        while ($a > 0)
+        {
+            $this->too_high ($a);
+            
+            $this->equals_fourty ($a);
+            
+            $this->count_tens ($a);
+            
+            $this->equals_nine ($remainder);
+            
+            $this->count_fives ($remainder);
+            
+            $this->equals_four ($remainder);
+            
+            $this->count_ones ($remainder);
+        
             return $this->register;
         }
     }
