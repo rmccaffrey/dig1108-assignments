@@ -94,4 +94,14 @@ class Calculator
         
         return $this->register;
     }
+    
+    public function reject_zero ($a)
+    {
+        if ($a == 0)
+        {
+            $this->register = "The Romans never learned of zero";
+            
+            return $this->register;
+        }
+    }
 }
