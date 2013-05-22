@@ -73,3 +73,6 @@ require_once "RomanNumeral.php";
  test ($calculator->count_tens (20) == "XX", "The calculator counts the correct number of tens");
  test ($calculator->count_tens (10) == "X", "The calculator counts the correct number of tens");
  test ($calculator->count_tens (39) == "XXX", "The calculator counts the correct number of tens");
+ 
+ //test to see if calculator can return 9
+ test ($calculator->equals_nine (9) == "IX", "The calculator can return the Roman number 9");
