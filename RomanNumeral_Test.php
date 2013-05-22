@@ -58,3 +58,6 @@ require_once "RomanNumeral.php";
  //test to find an instance of the calculator
  test ($calculator != null, "An instance of the calculator exists");
  
+ //test to see if the calculator is set to zero
+ test ($calculator->register == 0, "The calculator is set to zero");
+ 
