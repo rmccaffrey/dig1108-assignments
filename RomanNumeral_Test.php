@@ -67,3 +67,6 @@ require_once "RomanNumeral.php";
  
  //test to see if the calculator can return 40
  test ($calculator->equals_fourty (40) == "XL", "The calculator can return the Roman number 40");
+ 
+ //test to see if the calculator can calculate the correct number of Xs
+ test ($calculator->count_tens (30) == "XXX", "The calculator counts the correct number of tens");
