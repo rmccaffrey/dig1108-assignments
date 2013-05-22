@@ -91,3 +91,6 @@ require_once "RomanNumeral.php";
  
  //test to reject 0
  test ($calculator->reject_zero (0) == "The Romans never learned of zero", "The calculator can reject zero as input");
+ 
+ //test to see if you can use the public functions in tandem
+ test ($calculator->roman_numerals (41) == "Error: number too large to calculate", "The calculator can reject numbers too high to calculate");
