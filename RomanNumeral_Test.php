@@ -1,6 +1,7 @@
 <?php
 
-/
+//make sure we call the production code
+require_once "RomanNumeral.php";
 
 /**
  * Roman numeral calculator should convert arabic numbers to
@@ -40,4 +41,14 @@
  * While x >= 1 echo I and subtract 1
  */
  
+ //write a generic test function
+ function test ($assertion, $message=null)
+ {
+  echo (@assert($assertion) ? "pass " : "fail ") . $message . "\n";
+ }
+ 
+ test (1 + 1 == 2, "one and one are two");
+ 
+ //test to see if there is a calculator class
+ test (class_exists(Calculator), "There is a calculator class");
  
