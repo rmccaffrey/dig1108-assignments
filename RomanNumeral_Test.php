@@ -52,5 +52,9 @@ require_once "RomanNumeral.php";
  //test to see if there is a calculator class
  test (class_exists('Calculator'), "There is a calculator class");
  
+  //create an instance of the calculator
+ $calculator = new Calculator;
+ 
  //test to find an instance of the calculator
- test ($calculator = null, "An instance of the calculator exists");
+ test ($calculator != null, "An instance of the calculator exists");
+ 
