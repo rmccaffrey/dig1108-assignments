@@ -84,3 +84,7 @@ require_once "RomanNumeral.php";
  //test to see if calculator can return 4
  test ($calculator->equals_four (4) == "IV", "The calculator can return the Roman number 4");
  
+ //test to see if the calculator can return the correct number of Is
+ test ($calcualtor->count_ones (3) == "III", "The calculator counts the correct number of ones 3")
+ test ($calcualtor->count_ones (2) == "II", "The calculator counts the correct number of ones 3")
+ test ($calcualtor->count_ones (1) == "I", "The calculator counts the correct number of ones 3")
