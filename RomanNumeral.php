@@ -52,4 +52,20 @@ class Calculator
             return $this->register;
         }
     }
+    
+    public function count_fives ($a)
+    {
+        $number_fives = 0;
+        
+        while ($a >=5)
+        {
+            $number_fives = ($number_fives + 1);
+            
+            $a = ($a - 5);
+        }
+        
+        $this->register = str_repeat("V" , $number_fives);
+        
+        return $this->register;
+    }
 }
