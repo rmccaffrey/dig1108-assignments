@@ -81,3 +81,6 @@ require_once "RomanNumeral.php";
  test ($calculator->count_fives (5) == "V", "The calculator counts the correct number of fives 5");
  test ($calculator->count_fives (15) == "VVV", "The calculator counts the correct number of fives 15");
  
+ //test to see if calculator can return 4
+ test ($calculator->equals_four (4) == "IV", "The calculator can return the Roman number 4");
+ 
