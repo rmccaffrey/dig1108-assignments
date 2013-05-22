@@ -76,3 +76,7 @@ require_once "RomanNumeral.php";
  
  //test to see if calculator can return 9
  test ($calculator->equals_nine (9) == "IX", "The calculator can return the Roman number 9");
+ 
+ //test to see if the calculator can return the correct number of Vs
+ test ($calculator->count_fives (5) == "V", "The calculator counts the correct number of fives");
+ 
