@@ -62,5 +62,5 @@ require_once "RomanNumeral.php";
  test ($calculator->register == 0, "The calculator is set to zero");
  
  //test to see if the calculator can reject too large a number
- test ($calculator->too_large == "Error: number too large to calculate", "The calculator can reject numbers too high to calculate");
- 
+ test ($calculator->too_high (41) == "Error: number too large to calculate", "The calculator can reject numbers too high to calculate");
+ test ($calculator->too_high (40) == "Error: number too large to calculate", "The calculator can reject numbers too high to calculate");
