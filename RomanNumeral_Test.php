@@ -50,5 +50,5 @@ require_once "RomanNumeral.php";
  test (1 + 1 == 2, "one and one are two");
  
  //test to see if there is a calculator class
- test (class_exists(Calculator), "There is a calculator class");
+ test (class_exists('Calculator'), "There is a calculator class");
  
