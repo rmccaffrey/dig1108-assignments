@@ -68,4 +68,14 @@ class Calculator
         
         return $this->register;
     }
+    
+    public function equals_four ($a)
+    {
+        if ($a == 4)
+        {
+            $this->register = "IV";
+            
+            return $this->register;
+        }
+    }
 }
