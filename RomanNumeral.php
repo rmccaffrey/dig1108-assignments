@@ -78,4 +78,20 @@ class Calculator
             return $this->register;
         }
     }
+    
+    public function count_ones ($a)
+    {
+        $number_ones = 0;
+        
+        while ($a >= 1)
+        {
+            $number_ones = ($number_ones + 1);
+            
+            $a = ($a - 1);
+        }
+        
+        $this->register = str_repeat("I" , $number_ones);
+        
+        return $this->register;
+    }
 }
