@@ -7,8 +7,6 @@ class Calculator
 {
     public $register = 0;
     
-    public $slate = array();
-    
     public function too_high ($a)
     {
         if ($a > 40)
@@ -21,7 +19,7 @@ class Calculator
     
     public function equals_fourty ($a)
     {
-        if ($a = 40)
+        if ($a == 40)
         {
             $this->register = "XL";
             
@@ -43,5 +41,15 @@ class Calculator
         $this->register = str_repeat("X" , $number_tens);
         
         return $this->register;
+    }
+    
+    public function equals_nine ($a)
+    {
+        if ($a == 9)
+        {
+            $this->register = "IX";
+            
+            return $this->register;
+        }
     }
 }
