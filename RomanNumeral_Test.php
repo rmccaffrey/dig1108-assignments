@@ -66,4 +66,4 @@ require_once "RomanNumeral.php";
  test ($calculator->too_high (40) == "Error: number too large to calculate", "The calculator can reject numbers too high to calculate");
  
  //test to see if the calculator can return 40
- test ($calculator->equals_fourty (40) == "LX", "The calculator can return the Roman number 40");
+ test ($calculator->equals_fourty (40) == "XL", "The calculator can return the Roman number 40");
