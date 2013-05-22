@@ -5,5 +5,5 @@ echo "It's the Roman Numeral Calculator, yo!". "\n";
 
 class Calculator
 {
-    
+    public $register = 0;
 }
