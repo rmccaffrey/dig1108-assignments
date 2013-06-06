@@ -61,7 +61,16 @@ require_once "RomanNumeral.php";
  //test to see if the calculator is set to zero
  test ($calculator->register == 0, "The calculator is set to zero");
  
- //test to see if the calculator can reject too large a number
+ //test to see if you can use the public functions in tandem
+ test ($calculator->roman_numerals (41) == "Error: number too large to calculate", "The calculator can reject numbers too high to calculate");
+ 
+ //test to see if the calculator can return 40
+ test ($calculator->roman_numerals (40) == "XL", "The calculator can return 40.");
+ 
+ //test for less than 40
+ test ($calculator->roman_numerals (39) == "XXX", "The calculator can return less than 40.");
+ /*
+  //test to see if the calculator can reject too large a number
  test ($calculator->too_high (41) == "Error: number too large to calculate", "The calculator can reject numbers too high to calculate");
  test ($calculator->too_high (40) == "Error: number too large to calculate", "The calculator can reject numbers too high to calculate");
  
@@ -91,6 +100,4 @@ require_once "RomanNumeral.php";
  
  //test to reject 0
  test ($calculator->reject_zero (0) == "The Romans never learned of zero", "The calculator can reject zero as input");
- 
- //test to see if you can use the public functions in tandem
- test ($calculator->roman_numerals (41) == "Error: number too large to calculate", "The calculator can reject numbers too high to calculate");
+ */

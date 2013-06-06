@@ -9,6 +9,48 @@ class Calculator
     
     public $remainder = 0;
     
+    public $number_tens = 0;
+    
+    public function roman_numerals ($a)
+    {
+        if ($a > 40)
+        {
+            $this->register = "Error: number too large to calculate";
+            
+            return $this->register;
+        }
+        
+        if ($a == 40)
+        {
+            $this->register = "XL";
+            
+            return $this->register;
+        }
+        
+        while ($a >= 10)
+        {
+           $this->number_tens = ($this->number_tens +1);
+            
+            $a = ($a - 10);
+        }
+        
+        $this->register = str_repeat("X" , $number_tens);
+        
+        return $this->register;
+        
+        $this->remainder = $a;
+    }
+}
+
+
+
+/*
+class Calculator
+{
+    public $register = 0;
+    
+    public $remainder = 0;
+    
     public function too_high ($a)
     {
         if ($a > 40)
@@ -133,3 +175,4 @@ class Calculator
         }
     }
 }
+*/
