@@ -69,12 +69,16 @@ require_once "2015RomanNum_Code.php";
  
  //test for returning number of correct Xs
  test ($calculator->roman_numerals (30) == "XXX", "The calculator can return X for tens.");
+ test ($calculator->roman_numerals (30) == "XXXhaha", "The calculator can return X for tens with extra string.");
  
  //test to return 39
  test ($calculator->roman_numerals (39) == "XXIX", "The calculator can return XXIX for 39.");
+ test ($calculator->roman_numerals (39) == "XXIXhaha", "The calculator can return 39 for tens with extra string.");
  
  //test to return 35
  test ($calculator->roman_numerals (35) == "XXXV", "The calculator can return for 35.");
+ 
+ 
  /*
  
  //test to see if the calculator can reject too large a number
@@ -108,3 +112,5 @@ require_once "2015RomanNum_Code.php";
  //test to reject 0
  test ($calculator->reject_zero (0) == "The Romans never learned of zero", "The calculator can reject zero as input");
  */
+ 
+ ?>
