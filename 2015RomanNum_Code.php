@@ -5,14 +5,8 @@ echo "It's the Roman Numeral Calculator, yo!". "\n";
 
 class Calculator
 {
-    /*public $register = 0;
     
-    public $remainder = 0;
-    
-    public $number_tens = 0;
-    */
-    
-    public function roman_numerals ($a)
+    public function roman_numerals ($a, $remainder= 0, $number_tens = 0)
     {
         if ($a > 40)
         {
@@ -30,16 +24,19 @@ class Calculator
         
         while ($a >= 10)
         {
-           $this->number_tens = ($this->number_tens +1);
+           $number_tens = ($number_tens +1);
             
             $a = ($a - 10);
+            
+            
         }
         
-        $this->register = str_repeat("X" , $number_tens);
+        return $number_tens;
+        /*$this->register = str_repeat("X" , $number_tens);
         
         return $this->register;
         
-        $this->remainder = $a;
+        $this->remainder = $a;*/
     }
 }
 
