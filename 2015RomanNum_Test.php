@@ -68,9 +68,12 @@ require_once "2015RomanNum_Code.php";
  test ($calculator->roman_numerals (40) == "XL", "The calculator can return 40.");
  
  //test for less than 40
- test ($calculator->roman_numerals (39) == "3", "The calculator can count the number of tens.");
+ test ($calculator->roman_numerals (39) == "XXX", "The calculator can return X for tens.");
  /*
-  //test to see if the calculator can reject too large a number
+ 
+ 
+ 
+ //test to see if the calculator can reject too large a number
  test ($calculator->too_high (41) == "Error: number too large to calculate", "The calculator can reject numbers too high to calculate");
  test ($calculator->too_high (40) == "Error: number too large to calculate", "The calculator can reject numbers too high to calculate");
  
