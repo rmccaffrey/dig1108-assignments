@@ -29,17 +29,19 @@ class Calculator
             $a = ($a - 10);
             
             {
-                //if ($a == 9)
-                //{
-                    //$remainder = 
-                //}
+                if ($a == 9)
+                {
+                    $number_tens = null;
+                    
+                    $remainder = "XXIX"; 
+                }
                 
             }
             
             
         }
         
-        return $this->register = str_repeat("X" , $number_tens);
+        return $this->register = (str_repeat("X" , $number_tens) . $remainder);
         
         /*return $this->register;
         
