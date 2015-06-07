@@ -73,6 +73,8 @@ require_once "2015RomanNum_Code.php";
  //test to return 39
  test ($calculator->roman_numerals (39) == "XXIX", "The calculator can return XXIX for 39.");
  
+ //test to return 35
+ test ($calculator->roman_numerals (35) == "XXXV", "The calculator can return for 35.");
  /*
  
  //test to see if the calculator can reject too large a number

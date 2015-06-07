@@ -36,12 +36,37 @@ class Calculator
                     $remainder = "XXIX"; 
                 }
                 
+                while ($a >= 5)
+                {
+                    $number_fives = ($number_fives + 1);
+                    
+                    $a = ($a - 5);
+                    
+                   /* {
+                        if ($a == 4)
+                        {
+                            $number_fives = null;
+                            
+                            $remainder = "IV";
+                            
+                            {
+                                while ($a > 1)
+                                {
+                                    $number_ones = ($number_ones + 1);
+                                    
+                                    $a = ($a - 1);
+                                }
+                            }
+                        }
+                    }*/
+                }
+                
             }
             
             
         }
         
-        return $this->register = (str_repeat("X" , $number_tens) . $remainder);
+        return $this->register = (str_repeat("X" , $number_tens) . (str_repeat("V", $number_fives) . (str_repeat("I", $number_ones). $remainder);
         
         /*return $this->register;
         
