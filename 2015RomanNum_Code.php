@@ -6,7 +6,7 @@ echo "It's the Roman Numeral Calculator, yo!". "\n";
 class Calculator
 {
     
-    public function roman_numerals ($a, $number_tens = 0, $number_fives = 0, $number_ones = 0, $remainder = 0)
+    public function roman_numerals ($a, $number_tens = 0, $number_fives = 0, $number_ones = 0, $remainder = null)
     {
         if ($a > 40)
         {
@@ -29,9 +29,10 @@ class Calculator
             $a = ($a - 10);
             
             {
-                if ($a == 9){
-                    $remainder = 
-                }
+                //if ($a == 9)
+                //{
+                    //$remainder = 
+                //}
                 
             }
             
