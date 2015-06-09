@@ -34,7 +34,9 @@ class Calculator
                     $number_tens = null;
                     
                     $remainder = "XXIX"; 
+                    
                 }
+                
                 
                 /*while ($a >= 5)
                 {
@@ -66,7 +68,7 @@ class Calculator
             
         }
         
-        return $this->register = (str_repeat("X", $number_tens) .  /*(str_repeat("ha", 2)) .  (str_repeat("V", $number_fives) .(str_repeat("I", $number_ones).*/ $remainder);
+        return $this->register = (str_repeat("X", $number_tens) . (str_repeat("ha", $number_tens)) ./*  (str_repeat("V", $number_fives) .(str_repeat("I", $number_ones).*/ $remainder);
         
         /*return $this->register;
         
