@@ -20,7 +20,7 @@ require_once "2015RomanNum_Code.php";
  * 
  * through 39 (XXXVIII being the specific example). The repeating 
  * 
- * pattern through 39 is (I through III, before 5, 5, before 10, 10)
+ * pattern through 39 is (I through III, before 5, 5, before 10, 10).
  */
  
 /**

@@ -22,23 +22,39 @@ class Calculator
             return $this->register;
         }
         
-        while ($a >= 10)
+        if ($a >= 10)
         {
-            $number_tens = ($number_tens + 1);
+            while ($a >= 10)
+            {
+                $number_tens = ($number_tens + 1);
             
-            $a = ($a - 10);
+                $a = ($a - 10);
+            }
+            
+        }
         
+        elseif ($a >= 5)
+        {
+            while ($a >= 5)
+                {
+                    $number_fives = "V";
+                    
+                    $a = ($a - 5);
+                    
+                }
+        }    
+           
         if ($a == 9)
         {
             $remainder = "IX"; 
             
         }
         
-        if ($a == 5)
+       /* if ($a == 5)
         {
             $number_fives = "V"; 
             
-        }
+        }*/
         
         if ($a == 4)
         {
@@ -46,18 +62,12 @@ class Calculator
             
         }
         
-        while ($a >= 1)
-        {
-            $number_ones = ($number_ones + 1);
+       
             
-            $a = ($a - 1);
-        }
-    
-    }        
         
         
         
-        return $this->register = str_repeat("X", $number_tens) . $number_fives . str_repeat("I", $number_ones). $remainder;
+        return $this->register = str_repeat("X", $number_tens) . $number_fives . str_repeat("I", $number_ones) . $remainder;
         
     }
 }
