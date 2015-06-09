@@ -71,22 +71,24 @@ require_once "2015RomanNum_Code.php";
  //test for returning number of correct Xs
  test ($calculator->roman_numerals (30) == "XXX", "The calculator can return X for tens.");
 echo ($calculator->roman_numerals (30)) . "\n";
-
- test ($calculator->roman_numerals (30) == "XXXhaha", "The calculator can return X for tens with extra string.");
- test ($calculator->roman_numerals (30) == "XXXhahaha", "The calculator can return 2 versions of str_repeat.");
  
  //test to return 39
- test ($calculator->roman_numerals (39) == "XXIX", "The calculator can return XXIX for 39.");
- test ($calculator->roman_numerals (39) == "hahaXXIX", "The calculator can return 39 for tens with extra string.");
+ test ($calculator->roman_numerals (39) == "XXXIX", "The calculator can return XXXIX for 39.");
+ echo ($calculator->roman_numerals (39)) . "\n";
  
  //test to return 35
  test ($calculator->roman_numerals (35) == "XXXV", "The calculator can return for 35.");
- 
+  echo ($calculator->roman_numerals (35)) . "\n";
  //test to return 34
  test ($calculator->roman_numerals (34) == "XXXIV", "The calculator can return for 34.");
+  echo ($calculator->roman_numerals (34)) . "\n";
  
  
  /*
+ 
+ //test ($calculator->roman_numerals (30) == "XXXhaha", "The calculator can return X for tens with extra string.");
+ //test ($calculator->roman_numerals (30) == "XXXhahaha", "The calculator can return 2 versions of str_repeat.");
+ //test ($calculator->roman_numerals (39) == "hahaXXIX", "The calculator can return 39 for tens with extra string.");
  
  //test to see if the calculator can reject too large a number
  test ($calculator->too_high (41) == "Error: number too large to calculate", "The calculator can reject numbers too high to calculate");
