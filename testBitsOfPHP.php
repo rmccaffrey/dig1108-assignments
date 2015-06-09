@@ -8,6 +8,10 @@ echo str_repeat("Rob is so cool." . "\n", 3) . (str_repeat("ha", 2)) . "\n";
 
 function numTest ($a, $ninty = null, $l = null, $forty = null, $x = null, $v = null, $i = null, $r = null)
 {
+    if ($a == 0) {
+        $r = "The Romans never learned of zero.";
+    }
+    
     if ($a == 100){
         $r = "C";
         
@@ -81,5 +85,5 @@ function numTest ($a, $ninty = null, $l = null, $forty = null, $x = null, $v = n
     echo $ninty . str_repeat("L", $l) . $forty . str_repeat("X", $x) . str_repeat("V", $v) . str_repeat("I", $i) . $r;
 }
 
-numTest (99);
+numTest (0);
 ?>
