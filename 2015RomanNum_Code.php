@@ -45,15 +45,20 @@ class Calculator
             $remainder = "IV"; 
             
         }
+        
+        while ($a >= 1)
+        {
+            $number_ones = ($number_ones + 1);
+            
+            $a = ($a - 1);
+        }
+    
     }        
         
         
         
         return $this->register = str_repeat("X", $number_tens) . $number_fives . str_repeat("I", $number_ones). $remainder;
         
-        /*return $this->register;
-        
-        $this->remainder = $a;*/
     }
 }
 

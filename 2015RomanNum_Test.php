@@ -69,7 +69,7 @@ require_once "2015RomanNum_Code.php";
 
  
  //test for returning number of correct Xs
- test ($calculator->roman_numerals (30) == "XXX", "The calculator can return X for tens.");
+ test ($calculator->roman_numerals (30) == "XXX", "The calculator can return XXX for 30.");
 echo ($calculator->roman_numerals (30)) . "\n";
  
  //test to return 39
