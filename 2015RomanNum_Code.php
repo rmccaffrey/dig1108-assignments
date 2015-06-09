@@ -28,12 +28,23 @@ class Calculator
             
             $a = ($a - 10);
         
-            if ($a == 9)
+        if ($a == 9)
         {
             $remainder = "IX"; 
             
         }
         
+        if ($a == 5)
+        {
+            $number_fives = "V"; 
+            
+        }
+        
+        if ($a == 4)
+        {
+            $remainder = "IV"; 
+            
+        }
     }        
         
         

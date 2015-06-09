@@ -79,10 +79,18 @@ echo ($calculator->roman_numerals (30)) . "\n";
  //test to return 35
  test ($calculator->roman_numerals (35) == "XXXV", "The calculator can return for 35.");
   echo ($calculator->roman_numerals (35)) . "\n";
+ 
  //test to return 34
  test ($calculator->roman_numerals (34) == "XXXIV", "The calculator can return for 34.");
-  echo ($calculator->roman_numerals (34)) . "\n";
+ echo ($calculator->roman_numerals (34)) . "\n";
  
+ //test some 20s
+ test ($calculator->roman_numerals (29) == "XXIX", "The calculator can return for 29.");
+ echo ($calculator->roman_numerals (29)) . "\n";
+  test ($calculator->roman_numerals (25) == "XXV", "The calculator can return for 25.");
+ echo ($calculator->roman_numerals (25)) . "\n";
+  test ($calculator->roman_numerals (24) == "XXIV", "The calculator can return for 24.");
+ echo ($calculator->roman_numerals (24)) . "\n";
  
  /*
  
