@@ -6,7 +6,7 @@ echo "It's the Roman Numeral Calculator, yo!". "\n";
 class Calculator
 {
     
-    public function roman_numerals ($a, $number_tens = 0, $number_fives = 0, $number_ones = 0, $remainder = null)
+    public function roman_numerals ($a, $number_tens = null, $number_fives = null, $number_ones = null, $remainder = null)
     {
         if ($a > 40)
         {
@@ -24,51 +24,20 @@ class Calculator
         
         while ($a >= 10)
         {
-           $number_tens = ($number_tens +1);
+            $number_tens = ($number_tens + 1);
             
             $a = ($a - 10);
-            
-            {
-                if ($a == 9)
-                {
-                    $number_tens = null;
-                    
-                    $remainder = "XXIX"; 
-                    
-                }
-                
-                
-                /*while ($a >= 5)
-                {
-                    $number_fives = ($number_fives + 1);
-                    
-                    $a = ($a - 5);
-                    
-                    {
-                        if ($a == 4)
-                        {
-                            $number_fives = null;
-                            
-                            $remainder = "IV";
-                            
-                            {
-                                while ($a > 1)
-                                {
-                                    $number_ones = ($number_ones + 1);
-                                    
-                                    $a = ($a - 1);
-                                }
-                            }
-                        }
-                    }
-                }*/
-                
-            }
-            
-            
+        
+            if ($a == 9)
+        {
+            $remainder = "IX"; 
         }
         
-        return $this->register = (str_repeat("X", $number_tens) . (str_repeat("ha", $number_tens)) ./*  (str_repeat("V", $number_fives) .(str_repeat("I", $number_ones).*/ $remainder);
+    }        
+        
+        
+        
+        return $this->register = str_repeat("X", $number_tens) . $number_fives . str_repeat("I", $number_ones). $remainder;
         
         /*return $this->register;
         
