@@ -8,7 +8,7 @@ require_once "2015RomanNum_Code.php";
  * 
  * Roman numerals. Consider whether this means an array with 
  * 
- * places for Is, Vs, Xs, etc. Try to do up to 39 to simply
+ * places for Is, Vs, Xs, etc. Try to do up to 39 to simplify
  * 
  * problem for now. Consider how every 5 numbers there is a 
  * 
